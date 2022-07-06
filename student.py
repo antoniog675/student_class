@@ -15,6 +15,10 @@ class Student:
     def full_name(self):
         return f"{self._first_name} {self._last_name}"
 
+    @property
+    def start_date(self):
+        return f"{self._start_date}"
+
     def alert_santa(self):
         self.naughty_list = True
 

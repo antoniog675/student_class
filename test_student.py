@@ -1,6 +1,6 @@
 import unittest
 from student import Student
-from datetime import timedelta
+from datetime import timedelta, date
 from unittest.mock import patch
 
 class TestStudent(unittest.TestCase):
@@ -23,6 +23,10 @@ class TestStudent(unittest.TestCase):
     def test_full_name(self):
         print('test_full_name')
         self.assertEqual(self.student.full_name, 'John Doe')
+
+    def start_date(self):
+        print("Start_date")
+        self.assertEqual(self.student._start_date, date.today())
 
     def test_alert_santa(self):
         print('test_alert_santa')
